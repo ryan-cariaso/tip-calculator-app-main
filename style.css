@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+/* font-family: 'Space Mono', monospace; */
+
+* {
+  font-family: 'Space Mono', monospace;
+}
+
+body {
+  margin: 0;
+  background-color:hsl(185, 41%, 84%);
+}
+
+.title {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.calculator {
+  background: #fff;
+  padding: 15px;
+  border-radius: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  margin-left: 2%;
+}
+
+/* hides arrows in text boxes */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+label {
+  display: block;
+  position: relative;
+  text-align: left;
+  color: hsl(186, 14%, 43%);
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 5%;
+  margin-bottom: 10px;
+}
+
+
+#bill {
+  background: url(file:///C:/Users/ryanc/OneDrive/Documents/GitHub/tip-calculator-app-main/images/icon-dollar.svg) no-repeat left center;
+  font-family: 'Space Mono', monospace;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  font-size: 24px;
+  border-radius: 5px;
+  text-align: right;
+  background-color: hsl(189, 41%, 97%);
+  border: transparent;
+  column-width: auto;
+  height: 40px;
+}
+
+#bill:focus, #numOfPeople:focus {
+  outline: none;
+  border-radius: 5px;
+  transition: 0.3 ease;
+  box-shadow: 0 0 1pt 1.5pt hsl(172, 67%, 45%);
+}
+
+#numOfPeople {
+  background: url(file:///C:/Users/ryanc/OneDrive/Documents/GitHub/tip-calculator-app-main/images/icon-person.svg) no-repeat left center;
+  font-family: 'Space Mono', monospace;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  font-size: 24px;
+  border-radius: 5px;
+  text-align: right;
+  background-color: hsl(189, 41%, 97%);
+  border: transparent;
+  column-width: auto;
+  height: 40px;
+}

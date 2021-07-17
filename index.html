@@ -3,42 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <div class="main">
+
+    <div class="title">
+      <img src="file:///C:/Users/ryanc/OneDrive/Documents/GitHub/tip-calculator-app-main/images/logo.svg">
+    </div>
+
+    <div class="calculator">
+      <div class="row">
+        <div class="column">
+          <form>
+            <label for="bill">Bill</label>
+            <input type="number" id="bill" min="0.01" step="0.01" placeholder="0">
+            <label for="tip%">Select Tip %</label>
+            <input type="button" value="5%">
+            <input type="button" value="10%">
+            <input type="button" value="15%">
+            <input type="button" value="25%">
+            <input type="button" value="50%">
+            <input type="number" id="custom" placeholder="Custom">
+            <label for="numOfPeople">Number of People</label>
+            <input type="number" id="numOfPeople" placeholder="0">
+          </form>
+        </div>
+
+        <div class="column">
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+<footer>
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
-</head>
-<body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Ryan C.</a>.
   </div>
-</body>
+</footer>
 </html>
