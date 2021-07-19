@@ -28,11 +28,11 @@
             <label for="bill">Bill</label>
             <input type="number" id="bill" min="0.01" step="0.01" placeholder="0">
             <label for="tip">Select Tip %</label>
-            <button name="tip" type="submit" value="0.05">5%</button>
-            <button name="tip" type="submit" value="0.10">10%</button>
-            <button name="tip" type="submit" value="0.15">15%</button>
-            <button name="tip" type="submit" value="0.25">25%</button>
-            <button name="tip" type="submit" value="0.50">50%</button>
+            <button type="submit" onclick="myFunction(this)" value="0.05">5%</button>
+            <button type="submit" onclick="myFunction(this)" value="0.10">10%</button>
+            <button type="submit" onclick="myFunction(this)" value="0.15">15%</button>
+            <button type="submit" onclick="myFunction(this)" value="0.25">25%</button>
+            <button type="submit" onclick="myFunction(this)" value="0.50">50%</button>
             <input type="number" id="custom" placeholder="Custom">
             <label for="numOfPeople">Number of People</label>
             <input type="number" id="numOfPeople" placeholder="0">
@@ -48,13 +48,13 @@
                 <h2 id="total">Total</h2>
                 <p class="person">/ person</p>
               </div>
-
+                
               <div class="column2">
-                <div class="tipAmtResults">
-                  <output name="tipAmt" id="tipAmtResults" for="bill tip% numOfPeople" placeholder="$0.00"></output>
+                <div id="tipAmtResults">
+                  <sup>$</sup><span id="tip">0.00</span>
                 </div>
-                <div class="totalAmt">
-                  <output name="total" id="totalAmt" for="bill tip% numOfPeople"></output>
+                <div id="totalAmt">
+                  <sup>$</sup><span id="tip">0.00</span>
                 </div> 
               </div>
             </div>

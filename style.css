@@ -73,6 +73,7 @@ label {
 
 #numOfPeople {
   background: url(file:///C:/Users/ryanc/OneDrive/Documents/GitHub/tip-calculator-app-main/images/icon-person.svg) no-repeat left 10px center;
+  background-color: hsl(189, 41%, 97%);
 }
 
 /* adds green border around text boxes when clicked on */
@@ -160,4 +161,14 @@ button {
   transform: translate(-50%, -50%);
   border: transparent;
   border-radius: 5px;
+}
+
+#tipAmtResults, #totalAmt {
+  color: hsl(172, 67%, 45%);
+  text-align: right;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 36px;
+  margin-right: 25px;
+  margin-bottom: 2px;
 }
